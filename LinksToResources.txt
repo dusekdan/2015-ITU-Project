@@ -1,2 +1,4 @@
 Bullet points
 https://dribbble.com/shots/322975-Wizard
+
+HoverMenus, why not: http://uxmovement.com/navigation/why-hover-menus-do-users-more-harm-than-good/

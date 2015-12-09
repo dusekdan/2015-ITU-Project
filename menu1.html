@@ -10,8 +10,8 @@
         <h1 class="header_menu">Menu 1</h1>
         <nav class="nav_cont">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu 1</a>
+                <li><a onclick="identifyAction('1')" href="#">Home</a></li>
+                <li><a onclick="identifyAction('2')" href="#">Menu 1</a>
                     <ul>
                         <li><a href="#">Sub Menu 1</a></li>
                         <li><a href="#">Sub Menu 2</a></li>
@@ -32,9 +32,9 @@
                         <li><a href="#">Sub Menu 5</a></li>
                     </ul>
                 </li>
-                <li class="extendable selected"><a href="#">Menu 2</a>
+                <li onmouseover="identifyAction('3')" class="extendable selected"><a href="#">Menu 2</a>
                     <ul>
-                        <li><a href="#">Sub Menu 1</a></li>
+                        <li><a onclick="identifyAction('31')" href="#">Sub Menu 1</a></li>
                         <li><a href="#">Sub Menu 2</a></li>
                         <li><a href="#">Sub Menu 3</a></li>
                     </ul>
@@ -69,7 +69,48 @@
         </nav>
 
 
+        <input type="button" onclick="setTask()">
+
+
 
     </div>
+
+    <script>
+        var task = 31;
+        var currentProgress = "ok";
+        function setTask()
+        {
+            task += 1;
+            console.log(task);
+        }
+
+        function identifyAction(param)
+        {
+            console.log("Action " + param + " occured! Expected: " + task);
+            console.log("Param length:"+param.length+" Task length:"+task.toString().length);
+
+            if(param.length <= task.toString().length)
+            {
+                console.log("Ano, stale na dobre ceste");
+
+                // menu level <=> param.length
+                if(task.toString()[param.length-1] == param[param.length-1])
+                {
+                    console.log("Definitivne ok...");
+                }
+                else
+                {
+                    console.log("Tak nakonec spatna cesta...");
+                }
+            }
+            else
+            {
+                console.log("Ne, definitivne na spatne ceste...");
+            }
+
+            console.log("Return: ")
+        }
+    </script>
+
 </body>
 </html>

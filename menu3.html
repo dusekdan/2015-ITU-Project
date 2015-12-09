@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu 1</title>
+    <link rel="stylesheet" href="menu3.css" type="text/css" >
+</head>
+<body>
+
+<script type="text/javascript">
+
+    var toggleAbles = [];
+    toggleAbles["home"] = false;
+
+    function showSubMenu(itemId)
+    {
+        if(!toggleAbles[itemId])
+        {
+            itemId.setAttribute("class", "hover");
+            toggleAbles[itemId] = true;
+        }
+        else
+        {
+            itemId.setAttribute("class", "");
+            toggleAbles[itemId] = false;
+        }
+        console.log("classadded/removed");
+    }
+</script>
+
+<ul>
+    <li id="home">Home
+        <ul>
+            <li>Sub Menu 1</li>
+            <li>Sub Menu 2</li>
+            <li>Sub Menu 3</li>
+            <li class="extendable">Sub Menu 4
+                <ul>
+                    <li class="extendable">Deep Menu 1
+                        <ul>
+                            <li>Sub Deep 1</li>
+                            <li>Sub Deep 2</li>
+                            <li>Sub Deep 3</li>
+                            <li>Sub Deep 4</li>
+                        </ul>
+                    </li>
+                    <li>Deep Menu 2</li>
+                </ul>
+            </li>
+            <li>Sub Menu 5</li>
+        </ul>
+    </li>
+    <li>Menu 1
+        <ul>
+            <li>Sub Menu 1</li>
+            <li>Sub Menu 2</li>
+            <li>Sub Menu 3</li>
+            <li class="extendable">Sub Menu 4
+                <ul>
+                    <li class="extendable">Deep Menu 1
+                        <ul>
+                            <li>Sub Deep 1</li>
+                            <li>Sub Deep 2</li>
+                            <li>Sub Deep 3</li>
+                            <li>Sub Deep 4</li>
+                        </ul>
+                    </li>
+                    <li>Deep Menu 2</li>
+                </ul>
+            </li>
+            <li>Sub Menu 5</li>
+        </ul>
+    </li>
+    <li class="extendable selected">Menu 2
+        <ul>
+            <li>Sub Menu 1</li>
+            <li>Sub Menu 2</li>
+            <li>Sub Menu 3</li>
+        </ul>
+    </li>
+    <li class="extendable">Menu 3
+        <ul>
+            <li>Sub Menu 1</li>
+            <li class="extendable">Sub Menu 2
+                <ul>
+                    <li>Category 1</li>
+                    <li>Category 2</li>
+                    <li class="extendable">Category 3
+                        <ul>
+                            <li>Subcategory 1</li>
+                            <li>Subcategory 2</li>
+                            <li>Subcategory 3</li>
+                        </ul>
+                    </li>
+                    <li>Category 4</li>
+                    <li>Category 5</li>
+                </ul>
+            </li>
+            <li>Sub Menu 3</li>
+            <li>Sub Menu 4</li>
+            <li>Sub Menu 5</li>
+        </ul>
+    </li>
+    <li>Menu 4</li>
+    <li>Menu 5</li>
+    <li>Menu 6</li>
+</ul>
+
+</body>
+<script>
+
+    // drobný fix/hack
+    NodeList.prototype.forEach = Array.prototype.forEach;
+
+    var lastSubMenu;
+
+    document.addEventListener('click', function(e) {
+        var target = e.target;
+        console.log(target.localName, target, lastSubMenu, target == lastSubMenu);
+        if (target.localName == 'li') {
+            if (target == lastSubMenu) {
+                lastSubMenu.classList.remove('open');
+                lastSubMenu = undefined;
+            } else if (target.children.length) {
+                var child = target.children[0];
+                //target.children.forEach(function(child) {
+                if (child.localName == 'ul') {
+                    lastSubMenu = target;
+                    target.classList.add('open');
+                }
+                //})
+            } else if (lastSubMenu != undefined) {
+                lastSubMenu.classList.remove('open');
+                lastSubMenu = undefined;
+            }
+        } else {
+            document.querySelectorAll('li.open').forEach(function(child) {
+                child.classList.remove('open');
+            })
+        }
+    })
+
+
+</script>
+
+</body>
+</html>
