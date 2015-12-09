@@ -47,11 +47,6 @@ nav.nav_ic ul {
     z-index: -10;
 }
 
-nav.nav_cont ul:after, nav.nav_ic ul:after {
-    content: "";
-    clear: both;
-    display: block;
-}
 
 nav.nav_cont ul a, nav.nav_ic ul a {
     display:block;
@@ -60,6 +55,7 @@ nav.nav_cont ul a, nav.nav_ic ul a {
     font-weight: 400;
     font-size: 12px;
     padding: 0;
+    transition:all linear 0.15s;
 }
 
 nav.nav_cont ul li, nav.nav_ic ul li {
@@ -131,11 +127,11 @@ nav.nav_cont ul ul ul ul{
     left: 100%;
     top:0;
 }
-
+/*
 nav.nav_cont ul li:hover > ul {
     display:block;
 }
-
+*/
 
 nav.nav_ic ul li {
     border-right: solid 1px #cccccc;

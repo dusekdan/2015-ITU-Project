@@ -1,18 +1,30 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Menu 2</title>
     <link rel="stylesheet" href="menu2.css" type="text/css" >
+
+    <script type="text/javascript">
+
+        function Click() {
+            document.getElementById("extend_2").style.display = block;
+            document.getElementById("header_menu").style.color = red;
+            alert ("You clicked on the button!");
+        }
+
+    </script>
 </head>
 <body>
 <div id="page">
-    <h1 class="header_menu">Menu 2</h1>
+    <h1 id="header_menu" class="header_menu">Menu 2</h1>
     <nav class="nav_cont">
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Menu 1</a>
-                <ul>
+            <li id="clicked_2" onclick="Click()"><a href="#" onclick="Click()">Menu 1</a>
+                <ul id="extend_2">
                     <li><a href="#">Sub Menu 1</a></li>
                     <li><a href="#">Sub Menu 2</a></li>
                     <li><a href="#">Sub Menu 3</a></li>
@@ -82,5 +94,6 @@
 
 
 </div>
+
 </body>
 </html>

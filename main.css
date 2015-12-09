@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(246, 246, 246, 0.3);
+    font-family: "MS Sans Serif", Tahoma, Verdana, Arial, sans-serif;
+}
+
+#page {
+    width: 95%;
+    margin: 2% auto 2%;
+}
+
+form.main_form {
+    width: 45%;
+    margin: 3% 35%;
+}
+
+fieldset.first_step {
+    float: left;
+    clear: both;
+}
+
+fieldset.second_step, fieldset.third_step {
+    display: none;
+}
+
+ul.progressbar {
+    display: inline-table;
+    list-style:none;
+    position:relative;
+    float:left;
+    clear:both;
+    padding-bottom: 100px;
+    margin: 3% 10%;
+
+    background-image: url("Resources/Images/step1.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+ul.progressbar li {
+    position: relative;
+    float: left;
+    margin: 5px;
+}
+
+ul.progressbar li.active {
+    text-shadow: 0 0 4px #0096ff;
+}
