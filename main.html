@@ -7,22 +7,41 @@
 </head>
 <body>
     <div id="page">
-
+        <!-- progressbar -->
+        <ul class="progressbar">
+            <li class="active">Vkládání údajů</li>
+            <li>Výběr úkolu</li>
+            <li>Řešení úkolu</li>
+        </ul>
         <form class="main_form">
-            <!-- progressbar -->
-            <ul class="progressbar">
-                <li class="active">Vkládání údajů</li>
-                <li>Výběr úkolu</li>
-                <li>Řešení úkolu</li>
-            </ul>
             <!-- fieldsets -->
             <fieldset class="first_step">
-                <h2 class="fs-title">Create your account</h2>
-                <h3 class="fs-subtitle">This is step 1</h3>
-                <input type="text" name="email" placeholder="Email" />
-                <input type="password" name="pass" placeholder="Password" />
-                <input type="password" name="cpass" placeholder="Confirm Password" />
-                <input type="button" name="next" class="next action-button" value="Next" />
+                <h2 class="title">Zadejte: </h2>
+                <table>
+                    <tr>
+                        <td>Váš věk: </td>
+                        <td><input type="text" name="age" placeholder="věk"  /></td>
+                    </tr>
+                    <tr>
+                        <td>Vaši počítačovou znalost: </td>
+                        <td><input type="range" name="range"  placeholder="počítačová znalost" /></td>
+                    </tr>
+                    <tr>
+                        <td>Vaše pohlaví: </td>
+                        <td><label for="woman">Žena</label><input type="radio" id="woman" name="sex" placeholder="žena" /><label for="man">  Muž</label><input id="man" type="radio" name="sex"  placeholder="muž" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+
+                        <td>
+                            <input type="button" name="next" class="next-button button" value="A jdeme testovat..."  />
+                        </td>
+                    </tr>
+
+
+
+
+                </table>
             </fieldset>
             <fieldset class="second_step">
                 <h2 class="fs-title">Social Profiles</h2>
