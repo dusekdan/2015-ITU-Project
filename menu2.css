@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(246, 246, 246, 0.3);
+    font-family: "MS Sans Serif", Tahoma, Verdana, Arial, sans-serif;
+}
+
+#page {
+    width: 95%;
+    margin: 2% auto 2%;
+}
+
+h1.header_menu {
+    text-align: center;
+    padding: 1%;
+}
+
+nav.nav_cont, nav.ic {
+
+    margin-left: 34%;
+    padding: 0;
+    width: 70%;
+}
+
+nav.nav_cont ul, nav.ic ul {
+    background-color: rgb(236, 236, 236);
+    border-bottom: solid 1px #cacaca;
+    border-right: solid 1px #cacaca;
+    display: inline-table;
+    list-style:none;
+    position:relative;
+    float:left;
+    margin: 0;
+    padding: 0 5px;
+
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow:    0 0 5px rgba(0, 0, 0, 0.15);
+    box-shadow:         0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+nav.nav_cont ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+nav.nav_cont ul a {
+    display:block;
+    color: #161616;
+    text-decoration:none;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 0;
+}
+
+nav.nav_cont ul li {
+    position: relative;
+    float: left;
+    margin: 5px 5px;
+    padding: 5px 15px;
+    border: solid 1px rgb(236, 236, 236);
+    -webkit-transition: all 0.2s;
+    -moz-transition:    all 0.2s;
+    -ms-transition:     all 0.2s;
+    -o-transition:      all 0.2s;
+    transition:         all 0.2s;
+}
+
+nav.nav_cont ul li.selected {
+
+}
+
+nav.nav_cont ul li:hover {
+    background: linear-gradient( #e0e0e0, #bfbfbf);
+    border: solid 1px #bfbfbf;
+    border-radius: 3px;
+}
+
+nav.nav_cont ul ul li.extendable {
+    background-image: url("Resources/Images/extended.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+nav.nav_cont ul ul {
+    display: none;
+    position:absolute;
+    top:101%;
+    left:0;
+    background:rgb(236, 236, 236);
+    padding:0;
+
+}
+
+nav.nav_cont ul ul li {
+    float:none;
+    width:200px;
+    -webkit-transiton: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -transition: all 0.2s;
+}
+
+
+nav.nav_cont ul ul a {
+    line-height:120%;
+    padding: 0;
+}
+
+nav.nav_cont ul ul ul {
+    top:0;
+    left:100%;
+}
+
+nav.nav_cont ul ul ul ul{
+    position: absolute;
+    left: 100%;
+    top:0;
+}
+
+nav.nav_cont ul li:hover > ul {
+    display:block;
+}
