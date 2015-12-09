@@ -19,8 +19,9 @@ body {
 }
 /*form styles*/
 #msform {
-    width: 400px;
-    margin: 50px auto;
+    width: 45%;
+    margin: 3% 30%;
+    border: none;
     text-align: center;
     position: relative;
 }
@@ -37,6 +38,25 @@ body {
 
     /*stacking fieldsets above each other*/
     position: absolute;
+
+
+    /* ADDITION */
+    border: none;
+
+    float: left;
+    clear: both;
+    border-bottom-right-radius: 50px 30px;
+    border-top-left-radius: 50px 30px;
+
+    font-weight: 600;
+
+    background-color: rgb(0, 150, 255);
+    padding: 6% 10% 4%;
+
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    0 0 15px rgba(0, 0, 0, 0.5);
+    box-shadow:         0 0 15px rgba(0, 0, 0, 0.5);
+
 }
 /*Hide all except first fieldset*/
 #msform fieldset:not(:first-of-type) {
@@ -63,7 +83,7 @@ body {
     border: 0 none;
     border-radius: 1px;
     cursor: pointer;
-    padding: 10px 5px;a
+    padding: 10px 5px;
 margin: 10px 5px;
 }
 #msform .action-button:hover, #msform .action-button:focus {
@@ -88,6 +108,9 @@ margin: 10px 5px;
     overflow: hidden;
     /*CSS counters to number the steps*/
     counter-reset: step;
+
+
+
 }
 #progressbar li {
     list-style-type: none;

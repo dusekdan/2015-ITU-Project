@@ -16,11 +16,11 @@
     </ul>
     <!-- fieldsets -->
     <fieldset>
-        <h2 class="fs-title">Create your account</h2>
-        <h3 class="fs-subtitle">This is step 1</h3>
-        <input type="text" name="email" placeholder="Email" />
-        <input type="password" name="pass" placeholder="Password" />
-        <input type="number" name="cpass" placeholder="Confirm Password" />
+        <h2 class="fs-title">Zadejte</h2>
+        <!--<h3 class="fs-subtitle">This is step 1</h3>-->
+        <input type="text" name="age" placeholder="Věk">
+        <input type="range" name="range"  placeholder="Úroveň počítačové dovednosti">
+        Muž  <input type="radio" name="gender" value="male"> Žena <input type="radio" name="gender" value="female">
         <input type="button" name="next" class="next action-button" value="Next" />
     </fieldset>
     <fieldset>
