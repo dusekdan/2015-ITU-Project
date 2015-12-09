@@ -127,11 +127,6 @@ nav.nav_cont ul ul ul ul{
     left: 100%;
     top:0;
 }
-/*
-nav.nav_cont ul li:hover > ul {
-    display:block;
-}
-*/
 
 nav.nav_ic ul li {
     border-right: solid 1px #cccccc;
