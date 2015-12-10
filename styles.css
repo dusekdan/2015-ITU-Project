@@ -53,7 +53,7 @@ body {
     -moz-box-shadow:    0 0 15px rgba(0, 0, 0, 0.5);
     box-shadow:         0 0 15px rgba(0, 0, 0, 0.5);
 
-    font-size: 90%;
+    font-size: 100%;
     font-weight: 500;
     color: #c1ddff;
 
@@ -62,7 +62,7 @@ body {
 fieldset#menu1, fieldset#menu2, fieldset#menu3 {
     width: 90%;
     height: 90%;
-    margin: 15% -20% 30% 15%;
+    margin: 15% 0 30% 5%;
     padding-bottom: 40%;
 }
 
@@ -98,7 +98,7 @@ fieldset#menu3 {
     width: auto;
 
     padding: 10px 10px 10px;
-    font-size: 90%;
+    font-size: 100%;
     font-weight: 500;
     color: #c1ddff;
 
@@ -346,26 +346,10 @@ nav.nav_cont ul ul ul ul{
 }
 
 nav.nav_ic ul li {
-    border-right: solid 1px #cccccc;
     border-left: solid 1px #cccccc;
     margin: 0;
     padding: 8px 10px;
 
-}
-nav.nav_ic ul li.last {
-    border-right: none;
-}
-
-nav.nav_ic ul li.last {
-    padding-right: 9px;
-}
-
-nav.nav_ic ul li.first {
-    border-left: none;
-}
-
-nav.nav_ic ul li.first:hover {
-    padding-left: 9px;
 }
 
 nav.nav_ic ul li img {
@@ -396,6 +380,10 @@ div#bubble1, div#bubble2, div#bubble3 {
 
     height: 70px;
     width: 400px;
+
+    color: #193b67;
+    font-weight: 400;
+    font-size: 80%;
 
     -webkit-box-shadow: 0px 0px 1px 1px #bfbfbf;
     -moz-box-shadow: 0px 0px 1px 1px #bfbfbf;

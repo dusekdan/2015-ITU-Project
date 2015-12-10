@@ -16,7 +16,7 @@
     </ul>
     <!-- fieldsets -->
     <fieldset>
-        <h2 class="fs-title">Zadejte prosím</h2>
+        <h2 class="fs-title">Zadejte prosím...</h2>
         <div class="block">
             <input type="text" name="age" placeholder="Váš věk">
         </div>
@@ -30,7 +30,7 @@
         <input type="button" name="next" class="next1 action-button" value="A jdeme testovat..." />
     </fieldset>
     <fieldset>
-        <h2 class="fs-title">Vyberte variantu, kterou chcete testovat</h2>
+        <h2 class="fs-title">Zvolte úroveň, kterou byste rádi vyzkoušeli...</h2>
         <input type="button" name="selection1" class="selection1 action-button sel" value="Úroveň 1" />
         <input type="button" name="selection2" class="selection2 action-button sel" value="Úroveň 2" />
         <input type="button" name="selection3" class="selection3 action-button sel" value="Úroveň 3" />
@@ -39,7 +39,7 @@
     <fieldset id="menu1">
         <h2 class="fs-title">MENU 1</h2>
         <div id="bubble1"><strong>Úkol:</strong> <br>
-
+        <p>Pootočte obrázek směrem doprava, poté nastavte jeho barvu na černobílou a nakonec zvyšte sytost barev obrázku.</p>
 
 
         </div>
@@ -50,18 +50,40 @@
                 <li><a href="#"><img src="Resources/Images/icons/ic_3.png"></a></li>
                 <li><a href="#"><img src="Resources/Images/icons/ic_4.png"></a></li>
                 <li><a href="#"><img src="Resources/Images/icons/ic_5.png"></a></li>
-                <li><a href="#"><img src="Resources/Images/icons/ic_1.png"></a></li>
-                <li class="last"><a href="#"><img src="Resources/Images/icons/ic_1.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_6.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_7.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_8.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_9.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_10.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_11.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_12.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_13.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_15.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_16.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_17.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_18.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_19.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_20.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_21.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_23.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_25.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_26.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_28.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_29.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_30.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_31.png"></a></li>
+                <li class="last"><a href="#"><img src="Resources/Images/icons/ic_32.png"></a></li>
             </ul>
         </nav>
 
-        <input type="button" name="previous2" class="previous2 action-button" value="Previous" />
+        <input type="button" name="previous2" class="previous2 action-button" value="Zpět" />
         <input type="submit" name="submit" class="submit action-button" value="Odešli" />
     </fieldset>
     <fieldset id="menu2">
         <h2 class="fs-title">MENU 2</h2>
         <div id="bubble2"><strong>Úkol:</strong> <br>
 
+            Slučte všechny viditelné vrstvy, následne zvětšte obrázek, vyberte nějakou oblast a nastavte ji obrys.
 
         </div>
         <nav class="nav_cont">
@@ -345,13 +367,14 @@
             </ul>
             </nav>
 
-        <input type="button" name="previous3" class="previous3 action-button" value="Previous" />
+        <input type="button" name="previous3" class="previous3 action-button" value="Zpět" />
         <input type="submit" name="submit" class="submit action-button" value="Odešli" />
     </fieldset>
     <fieldset id="menu3">
         <h2 class="fs-title">MENU 3</h2>
         <div id="bubble3"><strong>Úkol:</strong> <br>
 
+            Mírně rozostřete obrázek, poté vyjměte jeho jednu část a vložte do jiného obrázku s tím, že bílá barva - pozadí - bude průhledná.
 
 
         </div>
@@ -643,8 +666,29 @@
                 <li><a href="#"><img src="Resources/Images/icons/ic_3.png"></a></li>
                 <li><a href="#"><img src="Resources/Images/icons/ic_4.png"></a></li>
                 <li><a href="#"><img src="Resources/Images/icons/ic_5.png"></a></li>
-                <li><a href="#"><img src="Resources/Images/icons/ic_1.png"></a></li>
-                <li class="last"><a href="#"><img src="Resources/Images/icons/ic_1.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_6.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_7.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_8.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_9.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_10.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_11.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_12.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_13.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_15.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_16.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_17.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_18.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_19.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_20.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_21.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_23.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_25.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_26.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_28.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_29.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_30.png"></a></li>
+                <li><a href="#"><img src="Resources/Images/icons/ic_31.png"></a></li>
+                <li class="last"><a href="#"><img src="Resources/Images/icons/ic_32.png"></a></li>
             </ul>
         </nav>
         <input type="button" name="previous4" class="previous4 action-button" value="Zpět" />
