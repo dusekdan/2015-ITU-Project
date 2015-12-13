@@ -86,7 +86,7 @@ nav.nav_cont ul li:hover {
 }
 
 nav.nav_cont ul ul li.extendable {
-    background-image: url("Resources/Images/extended.png");
+    background-image: url("../Resources/Images/extended.png");
     background-repeat: no-repeat;
     background-position: right center;
 }

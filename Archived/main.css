@@ -52,7 +52,7 @@ ul.progressbar {
     font-size: 85%;
     font-weight: 700;
 
-    background-image: url("Resources/Images/step1-l.png");
+    background-image: url("../Resources/Images/step1-l.png");
     background-size: 350px;
     background-position: top center;
     background-repeat: no-repeat;
